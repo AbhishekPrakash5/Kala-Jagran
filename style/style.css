@@ -1,9 +1,12 @@
 html,
-body,
 header,
 #intro {
     height: 100%;
     scroll-behavior: smooth;
+}
+
+.index-page {
+    height: 100%;
 }
 
 #intro{
