@@ -1,4 +1,11 @@
 /* Suman Kumar Tribute Page - Custom Styles */
+/*code to support devnagri font for hindi text*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&display=swap');
+
+.quote-text {
+  font-family: 'Noto Sans Devanagari', 'Georgia', serif !important;
+}
+
 
 :root {
   --primary-gold: #d4af37;
@@ -122,6 +129,7 @@ body {
   margin-left: auto;
 }
 
+
 .timeline-content {
   background: white;
   padding: 25px;
@@ -227,6 +235,28 @@ body {
 
 .gallery-item:hover .gallery-caption h5 {
   -webkit-line-clamp: 10;
+}
+/* Container for the film still */
+.cinema-frame {
+  background: #000;
+  height: 250px; /* This matches your original design height */
+  overflow: hidden;
+  position: relative;
+  border-bottom: 4px solid var(--primary-gold);
+}
+/*new code for cinematic contribution*/
+/* Force the PNG to fill the frame */
+.cinema-card-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important; /* This is the "magic" that removes the borders */
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* Subtle zoom on hover without breaking the container */
+.news-card:hover .cinema-card-img {
+  transform: scale(1.05);
 }
 
 /* News Clippings */
@@ -417,4 +447,103 @@ body {
   .gallery-item, .news-card, .stat-card {
     break-inside: avoid;
   }
+}
+/*new code for twstimonials section*/
+/* Artistic Quote Cards */
+.artistic-quote-card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  position: relative;
+  height: 100%;
+  border: 1px solid #f0f0f0;
+}
+
+.quote-accent-gold {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 4px;
+  background: var(--primary-gold);
+}
+
+.quote-accent-red {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 4px;
+  background: var(--deep-red);
+}
+
+.quote-mark {
+  font-size: 2.5rem;
+  color: var(--primary-gold);
+  opacity: 0.2;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.quote-text {
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+.quote-footer {
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: 1px dashed #ddd;
+}
+
+.quote-author {
+  color: var(--deep-red);
+  margin: 0;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.quote-source {
+  font-size: 0.85rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* AIR Legacy Banner */
+.air-legacy-banner {
+  background: linear-gradient(to right, #fcfaf5, #fff);
+  padding: 40px;
+  border-radius: 8px;
+  border-left: 6px solid var(--primary-gold);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.air-icon-circle {
+  width: 80px;
+  height: 80px;
+  background: var(--primary-gold);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin: 0 auto;
+}
+
+.air-title {
+  color: var(--deep-red);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.air-description {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.air-footer {
+  font-size: 0.9rem;
+  color: #999;
+  margin-top: 15px;
 }
