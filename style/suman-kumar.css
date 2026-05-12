@@ -224,6 +224,7 @@ body {
   margin: 0;
   display: -webkit-box;
   -webkit-line-clamp: 1;
+  line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -235,6 +236,7 @@ body {
 
 .gallery-item:hover .gallery-caption h5 {
   -webkit-line-clamp: 10;
+  line-clamp: 10;
 }
 /* Container for the film still */
 .cinema-frame {
@@ -345,6 +347,81 @@ body {
   text-decoration: none;
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+/* --- Final Fix for Collapsing Containers --- */
+
+.resume-logic-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  border: 2px solid var(--primary-gold);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #222; /* If everything fails, you see a dark box, not a line */
+  min-height: 500px; /* THIS PREVENTS THE COLLAPSE */
+  position: relative;
+}
+
+/* Hide PDF until targeted */
+.cv-interactive-viewer {
+  display: none;
+  height: 800px;
+}
+
+/* Show PDF when clicking 'View Full Profile' */
+#view-full-pdf:target {
+  display: block;
+}
+
+/* Hide the Preview card when the PDF is showing */
+#view-full-pdf:target ~ #resume-preview {
+  display: none;
+}
+
+/* Preview Card Layout */
+.cv-preview-card {
+  height: 500px; /* Fixed height for the preview state */
+  position: relative;
+  width: 100%;
+}
+
+.cv-img-fallback {
+  background: #f4f4f4; /* Light grey if image is missing */
+  height: 100%;
+  width: 100%;
+}
+
+.cv-img-placeholder {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+  display: block;
+}
+
+.cv-overlay {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.3); /* Darkens the image to see the button */
+}
+
+/* Close Button Styling */
+.viewer-controls {
+  background: var(--dark-brown);
+  padding: 12px;
+  text-align: right;
+}
+
+.btn-close-viewer {
+  color: white;
+  text-decoration: none;
+  padding: 5px 15px;
+  border: 1px solid white;
+  border-radius: 4px;
+  font-size: 0.9rem;
 }
 
 /* Impact Stats */
@@ -547,3 +624,4 @@ body {
   color: #999;
   margin-top: 15px;
 }
+
