@@ -1,4 +1,11 @@
 /* Suman Kumar Tribute Page - Custom Styles */
+/*code to support devnagri font for hindi text*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&display=swap');
+
+.quote-text {
+  font-family: 'Noto Sans Devanagari', 'Georgia', serif !important;
+}
+
 
 :root {
   --primary-gold: #d4af37;
@@ -122,6 +129,7 @@ body {
   margin-left: auto;
 }
 
+
 .timeline-content {
   background: white;
   padding: 25px;
@@ -216,6 +224,7 @@ body {
   margin: 0;
   display: -webkit-box;
   -webkit-line-clamp: 1;
+  line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -227,6 +236,29 @@ body {
 
 .gallery-item:hover .gallery-caption h5 {
   -webkit-line-clamp: 10;
+  line-clamp: 10;
+}
+/* Container for the film still */
+.cinema-frame {
+  background: #000;
+  height: 250px; /* This matches your original design height */
+  overflow: hidden;
+  position: relative;
+  border-bottom: 4px solid var(--primary-gold);
+}
+/*new code for cinematic contribution*/
+/* Force the PNG to fill the frame */
+.cinema-card-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important; /* This is the "magic" that removes the borders */
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* Subtle zoom on hover without breaking the container */
+.news-card:hover .cinema-card-img {
+  transform: scale(1.05);
 }
 
 /* News Clippings */
@@ -315,6 +347,81 @@ body {
   text-decoration: none;
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+/* --- Final Fix for Collapsing Containers --- */
+
+.resume-logic-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  border: 2px solid var(--primary-gold);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #222; /* If everything fails, you see a dark box, not a line */
+  min-height: 500px; /* THIS PREVENTS THE COLLAPSE */
+  position: relative;
+}
+
+/* Hide PDF until targeted */
+.cv-interactive-viewer {
+  display: none;
+  height: 800px;
+}
+
+/* Show PDF when clicking 'View Full Profile' */
+#view-full-pdf:target {
+  display: block;
+}
+
+/* Hide the Preview card when the PDF is showing */
+#view-full-pdf:target ~ #resume-preview {
+  display: none;
+}
+
+/* Preview Card Layout */
+.cv-preview-card {
+  height: 500px; /* Fixed height for the preview state */
+  position: relative;
+  width: 100%;
+}
+
+.cv-img-fallback {
+  background: #f4f4f4; /* Light grey if image is missing */
+  height: 100%;
+  width: 100%;
+}
+
+.cv-img-placeholder {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+  display: block;
+}
+
+.cv-overlay {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.3); /* Darkens the image to see the button */
+}
+
+/* Close Button Styling */
+.viewer-controls {
+  background: var(--dark-brown);
+  padding: 12px;
+  text-align: right;
+}
+
+.btn-close-viewer {
+  color: white;
+  text-decoration: none;
+  padding: 5px 15px;
+  border: 1px solid white;
+  border-radius: 4px;
+  font-size: 0.9rem;
 }
 
 /* Impact Stats */
@@ -418,3 +525,103 @@ body {
     break-inside: avoid;
   }
 }
+/*new code for twstimonials section*/
+/* Artistic Quote Cards */
+.artistic-quote-card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  position: relative;
+  height: 100%;
+  border: 1px solid #f0f0f0;
+}
+
+.quote-accent-gold {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 4px;
+  background: var(--primary-gold);
+}
+
+.quote-accent-red {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 4px;
+  background: var(--deep-red);
+}
+
+.quote-mark {
+  font-size: 2.5rem;
+  color: var(--primary-gold);
+  opacity: 0.2;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.quote-text {
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+.quote-footer {
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: 1px dashed #ddd;
+}
+
+.quote-author {
+  color: var(--deep-red);
+  margin: 0;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.quote-source {
+  font-size: 0.85rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* AIR Legacy Banner */
+.air-legacy-banner {
+  background: linear-gradient(to right, #fcfaf5, #fff);
+  padding: 40px;
+  border-radius: 8px;
+  border-left: 6px solid var(--primary-gold);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.air-icon-circle {
+  width: 80px;
+  height: 80px;
+  background: var(--primary-gold);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin: 0 auto;
+}
+
+.air-title {
+  color: var(--deep-red);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.air-description {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.air-footer {
+  font-size: 0.9rem;
+  color: #999;
+  margin-top: 15px;
+}
+
