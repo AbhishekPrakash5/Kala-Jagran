@@ -31,6 +31,8 @@ body {
   overflow: hidden;
 }
 
+
+
 .hero-section::before {
   content: '';
   position: absolute;
@@ -82,6 +84,206 @@ body {
   font-size: 1.3rem;
   opacity: 0.9;
   font-style: italic;
+}
+
+/* ==========================================================================
+   Theatrical Repertoire & Archive Section
+   ========================================================================== */
+
+.theatre-archive-section {
+  padding: 80px 20px;
+  background-color: #fcfbfa; /* Soft gallery-cream background */
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.archive-container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* Section Headings - Updated to match existing website branding */
+.archive-main-title {
+  font-family: Georgia, serif;
+  font-size: 2.8rem;
+  color: #8c2d19; /* Matches the theatrical maroon of your other sections */
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.archive-subtitle {
+  font-style: italic;
+  color: #6e655f;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 50px;
+}
+
+/* Elegant Glass Feature Card (National Recognition) */
+.premium-recognition-box {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(223, 203, 181, 0.5);
+  padding: 35px;
+  border-radius: 20px;
+  margin-bottom: 45px;
+  box-shadow: 0 15px 35px rgba(138, 122, 105, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Gold Accent Highlight Line */
+.premium-recognition-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: #d4af37; 
+}
+
+.archive-icon-badge {
+  font-size: 2.2rem;
+  color: #d4af37;
+  background: #fdfaf2;
+  border: 1px solid #f3eada;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.1);
+}
+
+.recognition-text h3 {
+  font-family: Georgia, serif;
+  font-size: 1.5rem;
+  color: #2c1111;
+  margin: 0 0 8px 0;
+}
+
+.recognition-text p {
+  margin: 0;
+  color: #4a443f;
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+/* Two Column Layout System */
+.archive-dual-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 35px;
+}
+
+/* Inside Display Grid Cards */
+.archive-card {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(223, 203, 181, 0.4);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(138, 122, 105, 0.05);
+}
+
+.archive-card h3 {
+  font-family: Georgia, serif;
+  font-size: 1.6rem;
+  color: #2c1111;
+  margin-top: 0;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eadeca;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.archive-card h3 i {
+  color: #8c2d19; /* Matches the theme maroon for icons */
+}
+
+/* Interactive Performance/Play Chips Grid */
+.production-matrix {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.production-matrix .play-chip {
+  background: #ffffff;
+  border: 1px solid #eadeca;
+  color: #4a3b32;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: default;
+}
+
+/* Interactive Hover States for Play Chips */
+.production-matrix .play-chip:hover {
+  background: #8c2d19; /* Changes to theme maroon on hover */
+  color: #ffffff;
+  border-color: #8c2d19;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(140, 45, 25, 0.15);
+}
+
+/* Children's Theatre Column Styling */
+.children-intro-text {
+  color: #6e655f;
+  margin-bottom: 25px;
+  font-style: italic;
+}
+
+.custom-bullet-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.custom-bullet-list li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px dashed #ebdccb;
+  color: #332d29;
+  font-weight: 500;
+}
+
+.custom-bullet-list li:last-child {
+  border-bottom: none;
+}
+
+.custom-bullet-list li i {
+  color: #3b7a57; /* Deep Creative Green Accent for checks */
+  font-size: 1.1rem;
+}
+
+/* Responsive Structural Breakpoints */
+@media (max-width: 992px) {
+  .archive-dual-grid {
+    grid-template-columns: 1fr;
+  }
+  .premium-recognition-box {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+  .premium-recognition-box::before {
+    width: 100%;
+    height: 4px;
+  }
 }
 
 /* Section Styling */
