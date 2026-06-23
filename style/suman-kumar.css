@@ -306,6 +306,8 @@ body {
   background: linear-gradient(to right, var(--primary-gold), transparent);
 }
 
+
+
 /* Timeline Styles */
 .timeline {
   position: relative;
@@ -360,6 +362,215 @@ body {
   border-radius: 50%;
   box-shadow: 0 0 0 4px var(--deep-red);
   top: 25px;
+}
+/* ==========================================================================
+   Tributes & Recognitions Pure CSS Engine 
+   ========================================================================== */
+.tributes-section {
+  padding: 100px 20px;
+  background-color: #fcfbfa;
+  overflow: hidden;
+}
+
+.tributes-container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.tributes-main-title {
+  font-family: Georgia, serif;
+  font-size: 2.8rem;
+  color: #8c2d19; /* Theme Maroon */
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.tributes-instruction {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #8a7a69;
+  text-align: center;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tributes-carousel-core {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* --- Left Column: Layout Base --- */
+.tributes-image-deck {
+  position: relative;
+  height: 420px;
+  width: 100%;
+  perspective: 1200px;
+}
+
+.deck-card {
+  position: absolute;
+  width: 85%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(226, 215, 203, 0.6);
+  transform-origin: center center;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.5s ease;
+  cursor: pointer;
+  
+  /* Fallback Layering Default State */
+  opacity: 0;
+  transform: translateX(75px) translateZ(-160px) rotate(5deg);
+  z-index: 1;
+}
+
+.deck-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #fdfdfd;
+}
+
+/* --- Right Column: Content Streams --- */
+.text-stream {
+  position: relative;
+  min-height: 220px;
+}
+
+.content-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.award-title {
+  font-family: Georgia, serif;
+  font-size: 1.9rem;
+  color: #2c1111;
+  margin: 0 0 12px 0;
+  line-height: 1.3;
+}
+
+.award-institution {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #8c2d19;
+  margin: 0 0 16px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.award-description {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #554c45;
+  margin: 0;
+}
+
+/* --- Control Indicators (Dots) --- */
+.tributes-nav-dots {
+  display: flex;
+  gap: 12px;
+  margin-top: 40px;
+}
+
+.dot-indicator {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #ebdccb;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot-indicator:hover {
+  background: #8c2d19;
+}
+
+/* ==========================================================================
+   PURE CSS ENGINE STATE MATRIX (The Logic Rules)
+   ========================================================================== */
+
+/* --- Radio Input State 1 Active --- */
+#trib-1:checked ~ .tributes-carousel-core .card-1 { opacity: 1; z-index: 3; transform: translateX(0) translateZ(0) rotate(0deg); }
+#trib-1:checked ~ .tributes-carousel-core .card-2 { opacity: 0.85; z-index: 2; transform: translateX(40px) translateZ(-80px) rotate(3deg); }
+#trib-1:checked ~ .tributes-carousel-core .cb-1 { position: relative; opacity: 1; transform: translateY(0); pointer-events: auto; }
+#trib-1:checked ~ .tributes-carousel-core .dot-1 { background: #8c2d19; transform: scale(1.2); }
+
+/* --- Radio Input State 2 Active --- */
+#trib-2:checked ~ .tributes-carousel-core .card-2 { opacity: 1; z-index: 3; transform: translateX(0) translateZ(0) rotate(0deg); }
+#trib-2:checked ~ .tributes-carousel-core .card-3 { opacity: 0.85; z-index: 2; transform: translateX(40px) translateZ(-80px) rotate(3deg); }
+#trib-2:checked ~ .tributes-carousel-core .cb-2 { position: relative; opacity: 1; transform: translateY(0); pointer-events: auto; }
+#trib-2:checked ~ .tributes-carousel-core .dot-2 { background: #8c2d19; transform: scale(1.2); }
+
+/* --- Radio Input State 3 Active --- */
+#trib-3:checked ~ .tributes-carousel-core .card-3 { opacity: 1; z-index: 3; transform: translateX(0) translateZ(0) rotate(0deg); }
+#trib-3:checked ~ .tributes-carousel-core .card-4 { opacity: 0.85; z-index: 2; transform: translateX(40px) translateZ(-80px) rotate(3deg); }
+#trib-3:checked ~ .tributes-carousel-core .cb-3 { position: relative; opacity: 1; transform: translateY(0); pointer-events: auto; }
+#trib-3:checked ~ .tributes-carousel-core .dot-3 { background: #8c2d19; transform: scale(1.2); }
+
+/* --- Radio Input State 4 Active --- */
+#trib-4:checked ~ .tributes-carousel-core .card-4 { opacity: 1; z-index: 3; transform: translateX(0) translateZ(0) rotate(0deg); }
+#trib-4:checked ~ .tributes-carousel-core .card-5 { opacity: 0.85; z-index: 2; transform: translateX(40px) translateZ(-80px) rotate(3deg); }
+#trib-4:checked ~ .tributes-carousel-core .cb-4 { position: relative; opacity: 1; transform: translateY(0); pointer-events: auto; }
+#trib-4:checked ~ .tributes-carousel-core .dot-4 { background: #8c2d19; transform: scale(1.2); }
+
+/* --- Radio Input State 5 Active --- */
+#trib-5:checked ~ .tributes-carousel-core .card-5 { opacity: 1; z-index: 3; transform: translateX(0) translateZ(0) rotate(0deg); }
+#trib-5:checked ~ .tributes-carousel-core .card-6 { opacity: 0.85; z-index: 2; transform: translateX(40px) translateZ(-80px) rotate(3deg); }
+#trib-5:checked ~ .tributes-carousel-core .cb-5 { position: relative; opacity: 1; transform: translateY(0); pointer-events: auto; }
+#trib-5:checked ~ .tributes-carousel-core .dot-5 { background: #8c2d19; transform: scale(1.2); }
+
+/* --- Radio Input State 6 Active --- */
+#trib-6:checked ~ .tributes-carousel-core .card-6 { opacity: 1; z-index: 3; transform: translateX(0) translateZ(0) rotate(0deg); }
+#trib-6:checked ~ .tributes-carousel-core .card-1 { opacity: 0.85; z-index: 2; transform: translateX(40px) translateZ(-80px) rotate(3deg); }
+#trib-6:checked ~ .tributes-carousel-core .cb-6 { position: relative; opacity: 1; transform: translateY(0); pointer-events: auto; }
+#trib-6:checked ~ .tributes-carousel-core .dot-6 { background: #8c2d19; transform: scale(1.2); }
+
+/* --- Radio Input State 7 Active --- */
+#trib-7:checked ~ .tributes-carousel-core .card-7 { opacity: 1; z-index: 3; transform: translateX(0) translateZ(0) rotate(0deg); }
+#trib-7:checked ~ .tributes-carousel-core .card-1 { opacity: 0.85; z-index: 2; transform: translateX(40px) translateZ(-80px) rotate(3deg); }
+#trib-7:checked ~ .tributes-carousel-core .cb-7 { position: relative; opacity: 1; transform: translateY(0); pointer-events: auto; }
+#trib-7:checked ~ .tributes-carousel-core .dot-7 { background: #8c2d19; transform: scale(1.2); }
+
+
+/* --- Mobile Responsive Layout Viewport Override --- */
+@media (max-width: 992px) {
+  .tributes-carousel-core {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .tributes-image-deck {
+    height: 350px;
+    max-width: 440px;
+    margin: 0 auto;
+  }
+  .text-stream {
+    min-height: auto;
+  }
+  .content-block {
+    text-align: center;
+  }
+  .tributes-nav-dots {
+    justify-content: center;
+    margin-top: 35px;
+  }
 }
 
 /* Gallery Styles */
