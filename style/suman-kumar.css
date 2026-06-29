@@ -867,6 +867,28 @@ body {
 }
 
 /* Video Section */
+/* Gallery Section Title */
+.gallery-title {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 2.2rem;
+    color: #8B1E14; /* Matched to the deep red headline color in your screenshot */
+    margin-bottom: 24px;
+    font-weight: normal;
+    padding-bottom: 12px;
+    position: relative;
+}
+
+/* Matching the gold/amber underline effect from the screenshot */
+.gallery-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%; /* Spans across the container width like your screenshot */
+    height: 2px;
+    background: linear-gradient(to right, #D4AF37, transparent); /* Gold gradient fade */
+}
+
 .video-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
