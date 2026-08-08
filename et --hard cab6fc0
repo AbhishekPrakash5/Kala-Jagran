@@ -1,0 +1,57 @@
+[33m1f2ea19[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{0}: reset: moving to origin/main
+[33m1f2ea19[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{1}: commit: Update Recommendations & Commendations section with formatted cards and PDF links
+[33mcab6fc0[m HEAD@{2}: commit: Update hero background image and suman-kumar page
+[33m6fafd1a[m HEAD@{3}: checkout: moving from main to main
+[33m6fafd1a[m HEAD@{4}: commit: news clippings
+[33mfb864e7[m HEAD@{5}: checkout: moving from main to main
+[33mfb864e7[m HEAD@{6}: commit: add some new sections
+[33m0938d2d[m HEAD@{7}: checkout: moving from main to main
+[33m0938d2d[m HEAD@{8}: commit: changes in gallery and biography section
+[33maccfddf[m HEAD@{9}: checkout: moving from main to main
+[33maccfddf[m HEAD@{10}: commit: added resume
+[33mdea3bcf[m HEAD@{11}: checkout: moving from main to main
+[33mdea3bcf[m HEAD@{12}: commit: Build: Finalize asset paths for awards, resume, and videos
+[33mf60455f[m HEAD@{13}: checkout: moving from main to main
+[33mf60455f[m HEAD@{14}: commit: Build: Finalize asset paths for awards, resume, and videos
+[33mc91a2cb[m HEAD@{15}: commit: Fix: Restore Theatrical Repertoire and Tributes sections on main
+[33m0bb2618[m HEAD@{16}: checkout: moving from feature/nidhiv3-fixed to main
+[33mafa5bcd[m[33m ([m[1;31morigin/feature/nidhiv3[m[33m, [m[1;32mfeature/nidhiv3-fixed[m[33m, [m[1;32mfeature/nidhiv3[m[33m)[m HEAD@{17}: checkout: moving from feature/nidhiv3 to feature/nidhiv3-fixed
+[33mafa5bcd[m[33m ([m[1;31morigin/feature/nidhiv3[m[33m, [m[1;32mfeature/nidhiv3-fixed[m[33m, [m[1;32mfeature/nidhiv3[m[33m)[m HEAD@{18}: checkout: moving from main to feature/nidhiv3
+[33m0bb2618[m HEAD@{19}: commit: Ensure all layout code is included
+[33m249bbf8[m HEAD@{20}: pull origin main: Fast-forward
+[33mc46a02d[m HEAD@{21}: checkout: moving from feature/nidhiv3 to main
+[33mafa5bcd[m[33m ([m[1;31morigin/feature/nidhiv3[m[33m, [m[1;32mfeature/nidhiv3-fixed[m[33m, [m[1;32mfeature/nidhiv3[m[33m)[m HEAD@{22}: commit: Tributes & Recognitions
+[33mf0d26c3[m HEAD@{23}: commit: chore: force track resume pdf asset
+[33m56ef57f[m HEAD@{24}: commit: resume
+[33m7d1ff81[m HEAD@{25}: commit: Theatrical Repertoire and video
+[33m730f94a[m HEAD@{26}: Branch: renamed refs/heads/feature/nidhiv3 to refs/heads/feature/nidhiv3
+[33m730f94a[m HEAD@{28}: commit: added a new section
+[33m105a126[m HEAD@{29}: commit: Fix iframe path for resume PDF preview
+[33m8d4d343[m HEAD@{30}: Branch: renamed refs/heads/feature/nidhiv3 to refs/heads/feature/nidhiv3
+[33m8d4d343[m HEAD@{32}: Branch: renamed refs/heads/feature/nidhiv3 to refs/heads/feature/nidhiv3
+[33m8d4d343[m HEAD@{34}: commit: resume
+[33m565bb13[m HEAD@{35}: commit (merge): Final resume upload
+[33me280a3e[m HEAD@{36}: Branch: renamed refs/heads/feature/nidhiv3 to refs/heads/feature/nidhiv3
+[33me280a3e[m HEAD@{38}: commit: resume
+[33m7d2e0b0[m HEAD@{39}: Branch: renamed refs/heads/feature/nidhiv3 to refs/heads/feature/nidhiv3
+[33m7d2e0b0[m HEAD@{41}: commit: CV
+[33m4183be9[m HEAD@{42}: Branch: renamed refs/heads/feature/nidhiv3 to refs/heads/feature/nidhiv3
+[33m4183be9[m HEAD@{44}: commit: added a video
+[33m7d9a4c8[m HEAD@{45}: Branch: renamed refs/heads/feature/nidhiv3 to refs/heads/feature/nidhiv3
+[33m7d9a4c8[m HEAD@{47}: commit: about, impact and social services, bhikhari thakur legacy, visual documentation, cinematic contribution, cv, photo gallery, news clippings, video gallery
+[33m1a0a4e9[m HEAD@{48}: commit: added webp pictures
+[33me609a76[m HEAD@{49}: Branch: renamed refs/heads/suman-kumar_nidhiV3.html to refs/heads/feature/nidhiv3
+[33me609a76[m HEAD@{51}: commit: hero section, biography section, impact and social service, The Bhikhari Thakur Legacy,Gallery of Excellence (Awards & Film Work),<!-- Film Contributions -->,Testimonials & Endorsements,Impact Statistics,Achievements Timeline,Resume/CV Section,Photo Gallery,News Clippings,Add more news cards,Video Testimonials/Performances,Placeholder for videos
+[33m734e503[m[33m ([m[1;32mupdate[m[33m)[m HEAD@{52}: checkout: moving from update to suman-kumar_nidhiV3.html
+[33m734e503[m[33m ([m[1;32mupdate[m[33m)[m HEAD@{53}: reset: moving to origin/main
+[33m060d58c[m[33m ([m[1;31morigin/update[m[33m)[m HEAD@{54}: commit: updated links
+[33m0d2db8c[m HEAD@{55}: checkout: moving from main to update
+[33mc46a02d[m HEAD@{56}: checkout: moving from update to main
+[33m0d2db8c[m HEAD@{57}: commit: adding instagram link
+[33mc46a02d[m HEAD@{58}: checkout: moving from main to update
+[33mc46a02d[m HEAD@{59}: checkout: moving from update to main
+[33mc46a02d[m HEAD@{60}: checkout: moving from main to update
+[33mc46a02d[m HEAD@{61}: commit: about changes
+[33m7df8b48[m HEAD@{62}: commit: fixed spelling
+[33ma2b1306[m HEAD@{63}: Branch: renamed refs/heads/master to refs/heads/main
+[33ma2b1306[m HEAD@{65}: commit (initial): first commit
