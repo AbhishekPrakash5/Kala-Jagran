@@ -1,397 +1,728 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kala Jagran</title>
-  <link rel="icon" href="assets/icon/kalajagran_main.jpg" type="image/x-icon" />
-  <link rel="stylesheet" href="style/style.css" />
+  <link class="js-meta-favicon" rel="icon" href="assets/icon/kalajagran_main.jpg" type="image/x-icon" />
+
+  <!-- Bootstrap & FontAwesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+  
+  <!-- External CSS Link -->
+  <link rel="stylesheet" href="style/style.css" />
 </head>
 
-<body class="index-page">
+<body>
   <header>
-    <nav class="
-          navbar navbar-expand-lg navbar-light
-          bg-light
-          fixed-top
-          scrolling-navbar
-        ">
-      <a class="navbar-brand" href="#">Kala Jagran</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Kala Jagran</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbar">
-        <ul class="navbar-nav mr-auto smooth-scrolling">
-          <li class="nav-item">
-            <a class="nav-link" href="#intro">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#images">Moments</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#videos">Natak</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="suman-kumar.html">Suman Kumar</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact_us">Contact Us</a>
-          </li>
-        </ul>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#intro">Home</a>
+            </li>
+            <li class="nav-item font-weight-bold">
+              <a class="nav-link" href="suman-kumar.html">Suman Kumar</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
+    <!-- Main Hero Block -->
     <div id="intro" class="view">
-      <div class="h-100">
-        <div class="d-flex justify-content-left ml-5 align-items-center h-100">
-          <h2 class="display-4 font-weight-bold text-white pt-5 mb-2">
-            कला जागरण <br />
-            Kala Jagran <br />
-            <p class="mt-3 h6 text-center">Cultural Organization Patna, Bihar</p>
-          </h2>
+      <div class="container">
+        <div class="row align-items-center pt-4">
+          <div class="col-lg-12 text-center text-lg-left">
+            <h1 class="display-4 brand-title mb-2">कला जागरण</h1>
+            <h2 class="h3 font-weight-light neutral-accent mb-3">Kala Jagran</h2>
+            <p class="lead hero-subtitle mb-4">Cultural Organization | Patna, Bihar</p>
+
+            <div class="accordion" id="historyAccordion">
+              <button class="btn btn-neutral text-uppercase" type="button" data-toggle="collapse" data-target="#collapseHistory" aria-expanded="false" aria-controls="collapseHistory">
+                <i class="fas fa-landmark mr-2"></i> हमारे बारे में और विस्तृत विवरण (About Us & Vision)
+              </button>
+            </div>
+          </div>
         </div>
+
+        <!-- Collapsible Narrative & New Refined Content Section -->
+        <div class="row mt-4">
+          <div class="col-12">
+            <div id="collapseHistory" class="collapse" aria-labelledby="historyAccordion" data-parent="#historyAccordion">
+              <div class="card archive-card p-4 p-md-5 mt-3">
+                
+                <!-- 1. हमारे बारे में -->
+                <h4 class="section-title"><i class="fas fa-info-circle mr-2"></i>1. कला जागरण में आपका स्वागत है (About Us)</h4>
+                <p class="about-text">
+                  कला जागरण भारतीय कला, रंगमंच और संस्कृति को समर्पित एक अग्रणी गैर-लाभकारी सांस्कृतिक संगठन है। वर्ष 1990 में पटना (बिहार) में स्थापित यह संस्था लोककला, सामाजिक नाटक, शास्त्रीय संगीत और समकालीन कला विधाओं के संरक्षण एवं संवर्धन के लिए निरंतर कार्यरत है।
+                </p>
+                <p class="about-text">
+                  हम बिहार और देश भर के वरिष्ठ व युवा रंगकर्मियों के लिए एक साझा मंच प्रदान करते हैं, जहाँ नाट्य कला और सांस्कृतिक धरोहरों को सहेजने के साथ-साथ नया आयाम दिया जाता है।
+                </p>
+
+                <!-- Historic Roots -->
+                <div class="bg-light p-3 rounded my-3 border">
+                  <p class="about-text mb-0 small text-muted">
+                    <strong>संस्था के संस्थापक व सहयोगी रंगकर्मी:</strong> वरिष्ठ रंगकर्मी गणेश प्रसाद सिन्हा, अखिलेश्वर प्रसाद सिन्हा, सुमन कुमार, कन्हैया प्रसाद, शिव शंकर रत्नाकर, नीलेश्वर मिश्र, डॉ किशोर सिन्हा, सुषमा सिन्हा, पूनम ठाकुर, आदिल रशीद, संजय सिंह, दीपक कुमार, अरुण सिंह पिंटू, मनोज मिनिस्टर, रमेश सिंह, संतोष शर्मा, राजकुमार प्रिंस आदि।
+                  </p>
+                </div>
+
+                <hr class="my-4" />
+
+                <!-- 2. दृष्टिकोण और मिशन -->
+                <h4 class="section-title"><i class="fas fa-bullseye mr-2"></i>2. हमारा दृष्टिकोण और मिशन (Vision & Mission)</h4>
+                <p class="about-text">
+                  <strong>दृष्टिकोण (Vision):</strong> एक ऐसे सांस्कृतिक समाज का निर्माण करना जहाँ पारंपरिक व समकालीन नाट्य कलाएँ फलें-फूलें, कलाकारों को गरिमापूर्ण पहचान मिले और युवा पीढ़ी अपनी सांस्कृतिक जड़ों से सशक्त रूप से जुड़ी रहे।
+                </p>
+                <p class="about-text mb-2"><strong>मिशन (Mission):</strong></p>
+                <ul class="about-text pl-4">
+                  <li class="mb-2"><strong>संरक्षण:</strong> विलुप्त होती लोककलाओं, ऐतिहासिक गाथाओं और सांस्कृतिक धरोहरों का प्रामाणिक दस्तावेजीकरण एवं मंचन करना।</li>
+                  <li class="mb-2"><strong>संवर्धन:</strong> राष्ट्रीय स्तर पर विषय-आधारित नाट्य उत्सवों, हास्य समारोहों और गहन कार्यशालाओं का आयोजन करना।</li>
+                  <li class="mb-2"><strong>सशक्तीकरण:</strong> नए व उभरते रंगकर्मियों को गुणवत्तापूर्ण प्रशिक्षण, संसाधन और राष्ट्रीय मंच प्रदान करना।</li>
+                </ul>
+
+                <hr class="my-4" />
+
+                <!-- 3. प्रमुख नाट्य महोत्सव -->
+                <h4 class="section-title"><i class="fas fa-theater-masks mr-2"></i>3. प्रमुख नाट्य महोत्सव (Major Theatre Festivals)</h4>
+                <p class="about-text">कला जागरण वर्ष भर विभिन्न विषयों और सामाजिक संदेशों पर आधारित प्रतिष्ठित नाट्य उत्सवों का आयोजन करता है:</p>
+                
+                <div class="table-responsive mb-3">
+                  <table class="table table-bordered table-custom">
+                    <thead>
+                      <tr>
+                        <th style="width: 35%;">महोत्सव / आयोजन</th>
+                        <th>विवरण व विशेषताएँ</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>आदि शक्ति नाट्य महोत्सव</strong></td>
+                        <td>कला जागरण का यह फ्लैगशिप वार्षिक आयोजन गंभीर, पौराणिक, ऐतिहासिक और सामाजिक चेतना पर आधारित उत्कृष्ट नाटकों के मंचन के लिए जाना जाता है।</td>
+                      </tr>
+                      <tr>
+                        <td><strong>हास्य नाट्य महोत्सव</strong></td>
+                        <td>दर्शकों को स्वस्थ मनोरंजन प्रदान करने और हास्य-व्यंग्य के माध्यम से सटीक सामाजिक संदेश देने के लिए समर्पित विशेष नाट्य उत्सव।</td>
+                      </tr>
+                      <tr>
+                        <td><strong>अखिल भारतीय ऐतिहासिक नाट्य महोत्सव</strong></td>
+                        <td>भारत के गौरवशाली इतिहास, स्वतंत्रता सेनानियों के योगदान और पौराणिक आख्यानों पर केंद्रित भव्य राष्ट्रीय मंचन।</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <hr class="my-4" />
+
+                <!-- 4. प्रमुख विभाग -->
+                <h4 class="section-title"><i class="fas fa-sitemap mr-2"></i>4. प्रमुख विभाग (Wings & Departments)</h4>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <div class="border rounded p-3 bg-light h-100">
+                      <h6><i class="fas fa-mask text-primary mr-2"></i><strong>रंगमंच एवं मंच कला (Theatre & Performing Arts)</strong></h6>
+                      <p class="small text-muted mb-0">ऐतिहासिक नाटक, आदि शक्ति नाट्य महोत्सव, हास्य-व्यंग्य नाटक, शास्त्रीय प्रस्तुतियाँ और जन-जागरूकता के लिए सड़क नाटक (नुक्कड़ नाटक)।</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="border rounded p-3 bg-light h-100">
+                      <h6><i class="fas fa-child text-primary mr-2"></i><strong>बाल एवं युवा रंगमंच (Youth Theatre Wing)</strong></h6>
+                      <p class="small text-muted mb-0">स्कूली और कॉलेज के विद्यार्थियों के लिए विशेष नाट्य प्रशिक्षण, वर्कशॉप और प्रतिस्पर्धी मंच।</p>
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="my-4" />
+
+                <!-- 5. प्रमुख पहल -->
+                <h4 class="section-title"><i class="fas fa-lightbulb mr-2"></i>5. प्रमुख पहल (Key Initiatives)</h4>
+                <ul class="about-text pl-4">
+                  <li class="mb-2"><strong>कला पाठशाला (समर कैंप):</strong> बच्चों और युवाओं के लिए अभिनय, संवाद अदायगी, योग, अभिव्यक्ति और मंच कलाओं की विशेष ग्रीष्मकालीन कार्यशालाएँ।</li>
+                  <li class="mb-2"><strong>सामाजिक चेतना (नुक्कड़ नाटक):</strong> बाल श्रम, पर्यावरण संरक्षण, साक्षरता, जल संरक्षण और महिला सशक्तीकरण जैसे ज्वलंत मुद्दों पर प्रभावशाली नुक्कड़ नाटकों का आयोजन।</li>
+                </ul>
+
+                <hr class="my-4" />
+
+                <!-- 6. हमारी उपलब्धियाँ -->
+                <h4 class="section-title"><i class="fas fa-trophy mr-2"></i>6. हमारी उपलब्धियाँ (Impact)</h4>
+                <div class="row my-3">
+                  <div class="col-md-4 mb-3">
+                    <div class="impact-box">
+                      <div class="impact-number">3+</div>
+                      <div class="small font-weight-bold text-uppercase">प्रतिष्ठित वार्षिक महोत्सव</div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <div class="impact-box">
+                      <div class="impact-number">5,000+</div>
+                      <div class="small font-weight-bold text-uppercase">कलाकार सशक्तिकृत</div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <div class="impact-box">
+                      <div class="impact-number">50,000+</div>
+                      <div class="small font-weight-bold text-uppercase">युवा जुड़ाव</div>
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="my-4" />
+
+                <!-- 7. हमसे जुड़ें -->
+                <h4 class="section-title"><i class="fas fa-hands-helping mr-2"></i>7. हमसे जुड़ें (Get Involved)</h4>
+                <div class="row">
+                  <div class="col-md-6 mb-2">
+                    <p class="about-text"><strong>कलाकारों के लिए:</strong> आगामी अखिल भारतीय ऐतिहासिक नाट्य महोत्सव, आदि शक्ति नाट्य महोत्सव, हास्य नाट्य महोत्सव और कार्यशालाओं में भाग लेने के लिए अपना ऑनलाइन पंजीकरण करें।</p>
+                  </div>
+                  <div class="col-md-6 mb-2">
+                    <p class="about-text"><strong>स्वयंसेवकों (Volunteers) के लिए:</strong> बैकस्टेज प्रबंधन, इवेंट संचालन, डिजिटल प्रमोशन और वर्कशॉप कॉर्डिनेशन में हमारे साथ जुड़कर योगदान दें।</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </header>
-  <hr />
-  <main class="mt-5">
+
+  <main class="py-5">
     <div class="container">
-      <section id="about" class="text-center">
-        <h2 class="mb-5">About</h2>
-        <div class="row">
-          <!-- <div class="col-lg-5 col-md-12 mb-4">
-			  <img src="assets/img/nanaji.jpg" class="img-fluid" />
-			</div> -->
-          <div class="col-lg-12 col-md-12">
-            <p class="mb-5 align-middle">
-              कला जागरण की स्थापना 1990 में बिहार के पटना जिला में की गई ।बिहार रंगमंच के कई रंगकर्मी एक छत रूपी
-              संस्था की तलाश में थे ।बिहार के वरिष्ठ रंगकर्मी गणेश प्रसाद
-              सिन्हा, अखिलेश्वर प्रसाद सिन्हा, सुमन कुमार कन्हैया प्रसाद ,शिव
-              शंकर रत्नाकर, नीलेश्वर मिश्र ,डॉ किशोर सिन्हा ,सुषमा सिन्हा
-              ,पूनम ठाकुर, आदिल रशीद ,संजय सिंह ,दीपक कुमार अरुण सिंह पिंटू,
-              मनोज मिनिस्टर, रमेश सिंह, संतोष शर्मा ,राजकुमार प्रिंस जैसे कई
-              कलाकारों के सामूहिक प्रयास और सहयोग से उस दौर में कला जागरण की
-              स्थापना हुई ।संस्था की पहली प्रस्तुति मधुकर सिंह लिखित बाबूजी का
-              पासबुक नाटक था जिसकी देश के कई भागों में प्रस्तुतियां ।हुई इसके
-              साथ ही आऊ झोपड़ी सुलग गेल, दो कौड़ी का खेल, बूढ़ी घोड़ी लाल लगाम
-              ,स्वतंत्रता की पुकार ,संपूर्ण क्रांति, सिलसिला जारी है, सनहा, जो
-              किताबों में नहीं है ,पुजारी काका, जोंक, बेवा, तूफान
-              सिंह,ताम्रपत्र, बेजुबान, सपना भईल विरान ,फूट, नरडंका,सुहागन बनली
-              अभागन ,भटकते लोग ,नदी का पानी,अंधा युग, बिन दुलहन की शादी ,आपन
-              हारल, पंच लाइट, असाढ़ का एक , बटोही सुन लो हमरी बात, बाबू लोहा
-              सिंह, फटा नोट, बड़े साहब खो गए, चारुलता ,ससुराल का नौकर, बाजे
-              ढिंढोरा, नीलकंठ निराला, अमली, रंगभूमि, सद्गति, सिक्का, चोरी,
-              घूस, माधवी, कबूतरी सहित कई नाटकों का मंचन कर चुकी है। नृत्य
-              नाटिका- वीरांगना, अंबपाली ,बिहार की बहार, गोपा सहित कई नाटकों का
-              मंचन बौद्ध महोत्सव, राजगीर महोत्सव जैसे देश के कई महत्वपूर्ण
-              आयोजनों में हुआ है। बाल रंगमंच को प्रोत्साहित करने के लिए संस्था
-              ने जेड सी सी, एन सी जेड,सी सी, संगीत नाटक अकादमी ,नई दिल्ली एवं
-              बिहार सरकार के कई नाट्य कार्यशाला का आयोजन कर चुकी है राष्ट्रीय
-              नाट्य विद्यालय ,नई दिल्ली के चर्चित आयोजन जश्ने बचपन में कला
-              जागरण के बाल कलाकारों ने बाल श्रम पर आधारित जरूरत इसी की थी नाटक
-              का सफल मंचन किया । नाट्यकार डॉक्टर चतुर्भुज की स्मृति में पिछले
-              11 वर्षों से लगातार अखिल भारतीय ऐतिहासिक नाट्य महोत्सव का आयोजन
-              किया जाता रहा है ।इस आयोजन में स्वतंत्रता की पुकार ,पीर अली,
-              वीरांगना, गोपा, अम्बपाली ,अशोक, कालसर्पिणी जैसे कई नाम शामिल
-              हैं। कला जागरण पिछले 5 वर्षों से प्रेम नाथ खन्ना आदि शक्ति नाट्य
-              महोत्सव और पिछले 3 वर्षों से हास्य नाट्य महोत्सव का आयोजन करा
-              रही है।
+
+
+    <!-- Latest Featured Performance / Past Play Section -->
+<section id="latest_play" class="mb-5 py-2">
+  <div class="row">
+    <div class="col-12 text-center text-md-left mb-4">
+      <h3 class="neutral-accent font-weight-bold" style="letter-spacing:1px;">
+        <i class="fas fa-history mr-2"></i>हाल ही में संपन्न प्रस्तुति (RECENT PERFORMANCE)
+      </h3>
+      <p class="text-muted small">कला जागरण द्वारा मंचित नवीनतम नाटक एवं ऐतिहासिक सांस्कृतिक आयोजनों की झलक।</p>
+    </div>
+  </div>
+
+  <div class="card upcoming-card p-4 p-md-4 border-0 shadow-sm">
+    <div class="row align-items-center">
+      
+      <!-- Play Poster / Image Column -->
+      <div class="col-lg-5 col-md-12 mb-4 mb-lg-0">
+        <div class="position-relative">
+          <img src="assets/img/bairi.jpeg" class="img-fluid rounded shadow-sm w-100" alt="बैरी पाइसवा हो राम" style="max-height: 380px; object-fit: cover;">
+          <span class="badge badge-success position-absolute" style="top: 12px; left: 12px; padding: 8px 12px; font-size: 0.85rem;">
+            <i class="fas fa-check-circle mr-1"></i> सफल मंचन (Completed)
+          </span>
+        </div>
+      </div>
+
+      <!-- Play Details Column -->
+      <div class="col-lg-7 col-md-12">
+        <div class="d-flex align-items-center mb-3">
+          <div class="upcoming-date-badge mr-3 bg-light text-dark border">
+            <div class="day font-weight-bold">26</div>
+            <div class="month text-uppercase">जुलाई</div>
+          </div>
+          <div>
+            <h4 class="font-weight-bold text-dark mb-1">बैरी पाइसवा हो राम (Bairi Paiswa Ho Ram)</h4>
+            <p class="small text-muted mb-0">
+              <i class="fas fa-user-edit mr-1"></i> <strong>कहानी:</strong> अशोक कुमार सिन्हा | <strong>नाट्य रूपांतरण:</strong> विवेक कुमार | <strong>परिकल्पना एवं निर्देशन:</strong> सुमन कुमार
             </p>
           </div>
         </div>
-      </section>
-      <hr />
-      <section id="images" class="text-center">
-        <h2 class="mb-5">Moments</h2>
 
-        <div id="demo" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ul class="carousel-indicators">
-            <li data-target="#demo" data-slide-to="0" class="active"></li>
-            <li data-target="#demo" data-slide-to="1"></li>
-            <li data-target="#demo" data-slide-to="2"></li>
-            <li data-target="#demo" data-slide-to="3"></li>
-            <li data-target="#demo" data-slide-to="4"></li>
-            <li data-target="#demo" data-slide-to="5"></li>
-            <li data-target="#demo" data-slide-to="6"></li>
-            <li data-target="#demo" data-slide-to="7"></li>
-            <li data-target="#demo" data-slide-to="8"></li>
-            <li data-target="#demo" data-slide-to="9"></li>
-            <li data-target="#demo" data-slide-to="10"></li>
-            <li data-target="#demo" data-slide-to="11"></li>
-            <li data-target="#demo" data-slide-to="12"></li>
-            <li data-target="#demo" data-slide-to="13"></li>
-            <li data-target="#demo" data-slide-to="14"></li>
-          </ul>
+        <p class="about-text text-muted mb-3" style="font-size: 0.98rem;">
+          कला एवं संस्कृति विभाग, बिहार सरकार के सौजन्य से सामयिक परिवेश द्वारा आयोजित 11वें आदि शक्ति प्रेमनाथ खन्ना समारोह में कला जागरण, पटना की सफल नाट्य प्रस्तुति।
+        </p>
 
-          <!-- The slideshow -->
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="assets/img/1.jpeg" class="img-fluid" alt="" />
+        <!-- Meta Details Box -->
+        <div class="bg-light p-3 rounded mb-3">
+          <div class="row">
+            <div class="col-sm-6 meta-info-item mb-2 mb-sm-0">
+              <i class="fas fa-calendar-check text-success"></i> <strong>मंचन तिथि:</strong> 26 जुलाई 2026
             </div>
-            <div class="carousel-item">
-              <img src="assets/img/2.jpeg" class="img-fluid" alt="" />
+            <div class="col-sm-6 meta-info-item mb-2 mb-sm-0">
+              <i class="fas fa-clock text-warning"></i> <strong>समय:</strong> संध्या 7:00 बजे
             </div>
-            <div class="carousel-item">
-              <img src="assets/img/3.jpeg" class="img-fluid" alt="" />
+            <div class="col-sm-6 meta-info-item mt-sm-2">
+              <i class="fas fa-map-marker-alt text-danger"></i> <strong>स्थान:</strong> प्रेमचंद रंगशाला, पटना
             </div>
-            <div class="carousel-item">
-              <img src="assets/img/4.jpeg" class="img-fluid" alt="" />
-            </div>
-            <div class="carousel-item">
-              <img src="assets/img/5.jpeg" class="img-fluid" alt="" />
-            </div>
-            <div class="carousel-item">
-              <img src="assets/img/6.jpeg" class="img-fluid" alt="" />
-            </div>
-            <div class="carousel-item">
-              <img src="assets/img/7.jpeg" class="img-fluid" alt="" />
-            </div>
-            <div class="carousel-item">
-              <img src="assets/img/8.jpeg" class="img-fluid" alt="" />
-            </div>
-            <div class="carousel-item">
-              <img src="assets/img/9.jpeg" class="img-fluid" alt="" />
-            </div>
-            <div class="carousel-item">
-              <img src="assets/img/10.jpeg" class="img-fluid" alt="" />
-            </div>
-            <div class="carousel-item">
-              <img src="assets/img/11.jpeg" class="img-fluid" alt="" />
-            </div>
-            <div class="carousel-item">
-              <img src="assets/img/12.jpeg" class="img-fluid" alt="" />
-            </div>
-            <div class="carousel-item">
-              <img src="assets/img/13.jpeg" class="img-fluid" alt="" />
-            </div>
-            <div class="carousel-item">
-              <img src="assets/img/14.jpeg" class="img-fluid" alt="" />
-            </div>
-            <div class="carousel-item">
-              <img src="assets/img/15.jpeg" class="img-fluid" alt="" />
+            <div class="col-sm-6 meta-info-item mt-sm-2">
+              <i class="fas fa-theater-masks text-info"></i> <strong>उत्सव:</strong> 11वां आदि शक्ति प्रेमनाथ खन्ना समारोह
             </div>
           </div>
+        </div>
 
-          <!-- Left and right controls -->
-          <a class="carousel-control-prev" href="#demo" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </a>
-          <a class="carousel-control-next" href="#demo" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
+        <!-- Action / Gallery Button -->
+        <div class="d-flex justify-content-start align-items-center pt-2">
+          <a href="#photo_gallery" class="btn btn-outline-dark px-4">
+            <i class="fas fa-images mr-2"></i> मंचन की तस्वीरें देखें
           </a>
         </div>
-      </section>
-      <hr />
-      <section id="videos" class="text-center">
-        <h2 class="mb-5">Natak</h2>
-        <div class="row">
-          <div class="col-lg-6 col-md-12 mb-4">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" width="520" height="315"
-                src="https://www.youtube.com/embed/6KeohMvG4do" title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-12 mb-4">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" width="520" height="315"
-                src="https://www.youtube.com/embed/n1Tzwj4Lfn8" title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 col-md-12 mb-4">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" width="520" height="315"
-                src="https://www.youtube.com/embed/rNHqDlwmMyg" title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-12 mb-4">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" width="520" height="315"
-                src="https://www.youtube.com/embed/72KL16wDYOk" title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <h4 class="mb-5">
-            More videos
-            <!--youtube-->
-            <a class="yt-ic text-center" href="https://www.youtube.com/channel/UC56fLZdZmb84-8cKLxCy9Fg"
-              target="_blank">
-              <i class="fab fa-youtube fa-lg mr-4"></i>
-            </a>
-          </h4>
-        </div>
-      </section>
-      <hr />
-      <section id="contact_us">
-        <!-- Heading -->
-        <h2 class="mb-5 font-weight-bold text-center">Join / Contact us</h2>
+      </div>
 
-        <!--Grid row-->
+    </div>
+  </div>
+</section>
+
+<!-- Single Featured Upcoming Play Section (Placeholder Template) -->
+<section id="upcoming_plays" class="mb-5 py-2">
+  <div class="row">
+    <div class="col-12 text-center text-md-left mb-4">
+      <h3 class="neutral-accent font-weight-bold" style="letter-spacing:1px;">
+        <i class="fas fa-calendar-alt mr-2"></i>आगामी नाटक व प्रस्तुति (UPCOMING PLAY & EVENT)
+      </h3>
+      <p class="text-muted small">कला जागरण की आगामी प्रमुख नाट्य प्रस्तुति की समय-सारणी, स्थान एवं विवरण।</p>
+    </div>
+  </div>
+
+  <!-- Dynamic Container: Replace content inside when event info is available -->
+  <div class="card upcoming-card p-4 p-md-4 border shadow-sm">
+    <div class="row align-items-center">
+      
+      <!-- Poster Placeholder / Image Column -->
+      <div class="col-lg-5 col-md-12 mb-4 mb-lg-0">
+        <div class="position-relative bg-light rounded d-flex align-items-center justify-content-center text-center p-4 border" style="min-height: 280px; max-height: 380px;">
+          <!-- Default Image / Poster Placeholder -->
+          <div>
+            <i class="fas fa-theater-masks fa-4x text-muted mb-3 opacity-50"></i>
+            <p class="text-muted small font-weight-bold mb-0">पोस्ट शीघ्र जारी किया जाएगा</p>
+            <span class="badge badge-warning position-absolute" style="top: 12px; left: 12px; padding: 8px 12px; font-size: 0.85rem;">
+              आगामी मंचन
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Play Details Placeholder Column -->
+      <div class="col-lg-7 col-md-12">
+        <div class="d-flex align-items-center mb-3">
+          <div class="upcoming-date-badge mr-3 bg-secondary text-white text-center rounded p-2" style="min-width: 60px;">
+            <div class="day font-weight-bold h4 mb-0">--</div>
+            <div class="month small text-uppercase">माह</div>
+          </div>
+          <div>
+            <h4 class="font-weight-bold text-dark mb-1">नवीनतम नाट्य मंचन (शीघ्र घोषित)</h4>
+            <p class="small text-muted mb-0">
+              <i class="fas fa-user-edit mr-1"></i> <strong>लेखक एवं निर्देशक:</strong> घोषणा जल्द होगी
+            </p>
+          </div>
+        </div>
+
+        <p class="about-text text-muted mb-3" style="font-size: 0.98rem;">
+          कला जागरण द्वारा शीघ्र ही एक नए एवं सामाजिक संदेश से भरपूर नाटक का मंचन किया जाएगा। तिथि, स्थान एवं कलाकारों की सूची जल्द ही यहाँ अपडेट की जाएगी।
+        </p>
+
+        <!-- Meta Details Box Placeholder -->
+        <div class="bg-light p-3 rounded mb-3">
+          <div class="row">
+            <div class="col-sm-6 meta-info-item mb-2 mb-sm-0">
+              <i class="fas fa-clock text-muted"></i> <strong>समय:</strong> शीघ्र उपलब्ध होगा
+            </div>
+            <div class="col-sm-6 meta-info-item mb-2 mb-sm-0">
+              <i class="fas fa-map-marker-alt text-muted"></i> <strong>स्थान:</strong> पटना (स्थान तय होना बाकी)
+            </div>
+            <div class="col-sm-6 meta-info-item mt-sm-2">
+              <i class="fas fa-ticket-alt text-muted"></i> <strong>प्रवेश:</strong> नि:शुल्क / पास द्वारा
+            </div>
+            <div class="col-sm-6 meta-info-item mt-sm-2">
+              <i class="fas fa-theater-masks text-muted"></i> <strong>आयोजक:</strong> कला जागरण, पटना
+            </div>
+          </div>
+        </div>
+
+        <!-- Action Button -->
+        <div class="d-flex justify-content-start align-items-center pt-2">
+          <a href="#contact_us" class="btn btn-neutral px-4 disabled" style="pointer-events: none; opacity: 0.65;">
+            <i class="fas fa-ticket-alt mr-2"></i> विवरण जल्द आ रहा है
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Registration Banner -->
+  <div class="card bg-light border p-3 rounded text-center mt-3">
+    <p class="mb-0 small text-muted">
+      <i class="fas fa-bullhorn text-dark mr-2"></i>
+      क्या आप आगामी नाट्य आयोजनों में अभिनय, बैकस्टेज प्रबंधन या स्वयंसेवा के रूप में भाग लेना चाहते हैं? 
+      <a href="#contact_us" class="font-weight-bold neutral-accent ml-1">यहाँ पंजीकरण करें &rarr;</a>
+    </p>
+  </div>
+</section>
+
+
+      <!-- Dedicated Natya Mahotsav Section -->
+<section id="natya_mahotsavs" class="mb-5 py-4">
+  <div class="row">
+    <div class="col-12 text-center text-md-left mb-4">
+      <h3 class="neutral-accent font-weight-bold" style="letter-spacing:1px;">हमारे प्रमुख नाट्य महोत्सव (OUR THEATRE FESTIVALS)</h3>
+      <p class="text-muted small">कला जागरण द्वारा आयोजित प्रतिष्ठित राष्ट्रीय व प्रांतीय नाट्य समारोह, उनकी झलकी और प्रस्तुतियाँ।</p>
+    </div>
+  </div>
+
+  <!-- 1. आदि शक्ति नाट्य महोत्सव -->
+  <div class="card festival-card p-4 mb-4">
+    <div class="row align-items-center">
+      <div class="col-lg-12 mb-3">
+        <span class="festival-badge text-uppercase mb-2 d-inline-block">Flagship Event</span>
+        <h4 class="font-weight-bold text-dark">1. आदि शक्ति नाट्य महोत्सव (Aadi Shakti Natya Mahotsav)</h4>
+        <p class="text-muted mb-0">गंभीर, पौराणिक, ऐतिहासिक और सामाजिक चेतना पर आधारित उत्कृष्ट नाटकों का वार्षिक मंचन।</p>
+      </div>
+    </div>
+    
+    <!-- Photos & Video Grid for Aadi Shakti Natya -->
+    <div class="row mt-2">
+      <div class="col-md-3 col-6 mb-3">
+        <img src="assets/img/aadishakti.jpg" class="media-thumb img-zoomable" alt="Aadi Shakti Natya Photo 1" style="cursor: pointer;">
+      </div>
+      <div class="col-md-3 col-6 mb-3">
+        <img src="assets/img/aadishakti1.jpg" class="media-thumb img-zoomable" alt="Aadi Shakti Natya Photo 2" style="cursor: pointer;">
+      </div>
+      <div class="col-lg-6 mb-3">
+        <div class="position-relative rounded overflow-hidden shadow-sm" style="height: 100%; min-height: 250px;">
+          <!-- YouTube Thumbnail Image -->
+          <img src="https://img.youtube.com/vi/pZJXNI68kwE/hqdefault.jpg" class="w-100 h-100" style="object-fit: cover;" alt="Aadi Shakti Natya Mahotsav">
+          
+          <!-- Clickable Play Button Overlay -->
+          <a href="https://youtu.be/pZJXNI68kwE?si=8OiZTslGG5ejKTCs" target="_blank" class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center text-decoration-none" style="background: rgba(0, 0, 0, 0.4); left: 0; top: 0;">
+            <div class="text-center">
+              <i class="fas fa-play-circle text-white mb-2" style="font-size: 3.5rem;"></i>
+              <div class="font-weight-bold text-white small">Watch Performance on YouTube</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. हास्य नाट्य महोत्सव -->
+  <div class="card festival-card p-4 mb-4">
+    <div class="row align-items-center">
+      <div class="col-lg-12 mb-3">
+        <span class="festival-badge text-uppercase mb-2 d-inline-block">Annual Comedy Fest</span>
+        <h4 class="font-weight-bold text-dark">2. हास्य नाट्य महोत्सव (Hasya Natya Mahotsav)</h4>
+        <p class="text-muted mb-0">दर्शकों को व्यंग्य और हास्य-नाटक के माध्यम से सटीक सामाजिक संदेश देने के लिए समर्पित विशेष उत्सव।</p>
+      </div>
+    </div>
+
+    <!-- Photos & Video Grid for Hasya Natya -->
+    <div class="row mt-2">
+      <div class="col-md-3 col-6 mb-3">
+        <img src="assets/img/evidence for padmashri - natya_mahotsav-1.jpg" class="media-thumb img-zoomable" alt="Hasya Natya Photo 1" style="cursor: pointer;">
+      </div>
+      <div class="col-md-3 col-6 mb-3">
+        <img src="assets/img/evidence for padmashri - natya_mahotsav-2.jpg" class="media-thumb img-zoomable" alt="Hasya Natya Photo 2" style="cursor: pointer;">
+      </div>
+      <div class="col-lg-6 mb-3">
+        <div class="position-relative rounded overflow-hidden shadow-sm" style="height: 100%; min-height: 250px;">
+          <!-- YouTube Thumbnail Image -->
+          <img src="https://img.youtube.com/vi/syQw3PFB6c0/hqdefault.jpg" class="w-100 h-100" style="object-fit: cover;" alt="Hasya Natya Mahotsav">
+          
+          <!-- Clickable Play Button Overlay -->
+          <a href="https://www.youtube.com/watch?v=syQw3PFB6c0" target="_blank" class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center text-decoration-none" style="background: rgba(0, 0, 0, 0.4); left: 0; top: 0;">
+            <div class="text-center">
+              <i class="fas fa-play-circle text-white mb-2" style="font-size: 3.5rem;"></i>
+              <div class="font-weight-bold text-white small">Watch Performance on YouTube</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. अखिल भारतीय ऐतिहासिक नाट्य महोत्सव -->
+  <div class="card festival-card p-4 mb-2">
+    <div class="row align-items-center">
+      <div class="col-lg-12 mb-3">
+        <span class="festival-badge text-uppercase mb-2 d-inline-block">National Historical Fest</span>
+        <h4 class="font-weight-bold text-dark">3. अखिल भारतीय ऐतिहासिक नाट्य महोत्सव (All India Historical Theatre Fest)</h4>
+        <p class="text-muted mb-0">भारत के गौरवशाली इतिहास, स्वतंत्रता सेनानियों के योगदान और पौराणिक आख्यानों पर केंद्रित राष्ट्रीय मंचन।</p>
+      </div>
+    </div>
+
+    <!-- Photos & Video Grid for Historical Natya -->
+    <div class="row mt-2">
+      <div class="col-md-3 col-6 mb-3">
+        <img src="assets/img/historical.jpg" class="media-thumb img-zoomable" alt="Historical Natya Photo 1" style="cursor: pointer;">
+      </div>
+      <div class="col-md-3 col-6 mb-3">
+        <img src="assets/img/historical1.jpg" class="media-thumb img-zoomable" alt="Historical Natya Photo 2" style="cursor: pointer;">
+      </div>
+      <div class="col-lg-6 mb-3">
+        <div class="position-relative rounded overflow-hidden shadow-sm" style="height: 100%; min-height: 250px;">
+          <!-- YouTube Thumbnail Image -->
+          <img src="https://img.youtube.com/vi/_AN4qLJejyg/hqdefault.jpg" class="w-100 h-100" style="object-fit: cover;" alt="Historical Natya Mahotsav">
+          
+          <!-- Clickable Play Button Overlay -->
+          <a href="https://youtu.be/_AN4qLJejyg?si=MNlfcv0M1VrW4OJD" target="_blank" class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center text-decoration-none" style="background: rgba(0, 0, 0, 0.4); left: 0; top: 0;">
+            <div class="text-center">
+              <i class="fas fa-play-circle text-white mb-2" style="font-size: 3.5rem;"></i>
+              <div class="font-weight-bold text-white small">Watch Performance on YouTube</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Dedicated Nukkad Natak Section -->
+<section id="nukkad_natak" class="mb-5 py-2">
+  <div class="card nukkad-card p-4 p-md-5">
+    <div class="row align-items-center mb-4">
+      <div class="col-lg-8 col-md-7">
+        <span class="badge badge-secondary text-uppercase mb-2 px-3 py-2">Social Awareness & Street Theatre</span>
+        <h3 class="neutral-accent font-weight-bold" style="letter-spacing:1px;">नुक्कड़ नाटक एवं जन-जागरूकता (NUKKAD NATAK)</h3>
+        <p class="text-muted mb-0">
+          कला जागरण सामाजिक चेतना और जन-जागरूकता फैलाने के लिए खुले आंगनों, चौराहों और सार्वजनिक स्थलों पर प्रभावशाली नुक्कड़ नाटकों का आयोजन करता आ रहा है।
+        </p>
+      </div>
+      <div class="col-lg-4 col-md-5 text-md-right mt-3 mt-md-0">
+        <a class="btn btn-neutral btn-sm px-4" href="#contact_us">
+          <i class="fas fa-bullhorn mr-2"></i> Book Street Performance
+        </a>
+      </div>
+    </div>
+
+    <!-- Core Social Topics Addressed -->
+    <div class="mb-4">
+      <h6 class="font-weight-bold text-dark mb-2">मुख्य सामाजिक विषय (Key Themes Covered):</h6>
+      <div>
+        <span class="topic-badge"><i class="fas fa-child mr-1"></i> बाल श्रम उन्मूलन</span>
+        <span class="topic-badge"><i class="fas fa-tree mr-1"></i> पर्यावरण संरक्षण</span>
+        <span class="topic-badge"><i class="fas fa-female mr-1"></i> महिला सशक्तीकरण</span>
+        <span class="topic-badge"><i class="fas fa-tint mr-1"></i> जल संरक्षण</span>
+        <span class="topic-badge"><i class="fas fa-book-reader mr-1"></i> साक्षरता अभियान</span>
+      </div>
+    </div>
+
+    <!-- Photos & Video Grid for Nukkad Natak -->
+    <div class="row mt-2">
+      <div class="col-md-3 col-6 mb-3">
+        <img src="assets/img/nukkad.png" class="media-thumb img-zoomable" alt="Nukkad Natak Photo 1" style="cursor: pointer;">
+      </div>
+      <div class="col-md-3 col-6 mb-3">
+        <img src="assets/img/nukkad1.png" class="media-thumb img-zoomable" alt="Nukkad Natak Photo 2" style="cursor: pointer;">
+      </div>
+      <div class="col-lg-6 mb-3">
+        <div class="position-relative rounded overflow-hidden shadow-sm" style="height: 100%; min-height: 250px;">
+          <!-- YouTube Thumbnail Image -->
+          <img src="https://img.youtube.com/vi/UeejGFXPnCw/hqdefault.jpg" class="w-100 h-100" style="object-fit: cover;" alt="Nukkad Natak">
+          
+          <!-- Clickable Play Button Overlay -->
+          <a href="https://youtu.be/UeejGFXPnCw?si=XSJHZk0H_ZHmAEw3" target="_blank" class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center text-decoration-none" style="background: rgba(0, 0, 0, 0.4); left: 0; top: 0;">
+            <div class="text-center">
+              <i class="fas fa-play-circle text-white mb-2" style="font-size: 3.5rem;"></i>
+              <div class="font-weight-bold text-white small">Watch Performance on YouTube</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Image Zoom Modal (Lightbox) -->
+<div class="modal fade" id="imageZoomModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <div class="modal-header border-0 pb-0">
+        <button type="button" class="close text-white opacity-100" data-dismiss="modal" aria-label="Close" style="font-size: 2rem; outline: none;">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center p-2">
+        <img src="" id="zoomedImage" class="img-fluid rounded shadow-lg" alt="Zoomed View" style="max-height: 85vh; object-fit: contain;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Optional Hover CSS and JS Script for Zoom Feature -->
+<style>
+  .img-zoomable {
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+  .img-zoomable:hover {
+    transform: scale(1.03);
+    opacity: 0.9;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const zoomableImages = document.querySelectorAll(".img-zoomable");
+    const modalImage = document.getElementById("zoomedImage");
+
+    zoomableImages.forEach(img => {
+      img.addEventListener("click", function () {
+        modalImage.src = this.src;
+        modalImage.alt = this.alt;
+        $('#imageZoomModal').modal('show');
+      });
+    });
+  });
+</script>
+
+      <!-- Photo Gallery Section -->
+      <section id="photo_gallery" class="mb-5">
+        <div class="card archive-card p-4 p-md-5">
+          <div class="row align-items-center">
+            <div class="col-lg-5 mb-4 mb-lg-0 text-center text-lg-left">
+              <h3 class="neutral-accent font-weight-bold mb-3" style="letter-spacing:1px;">Glimpses of Our Journey</h3>
+              <p class="text-muted small pr-lg-3" style="line-height: 1.7;">
+                Explore archival moments, field actions, social initiatives, and behind-the-scenes memories capturing the decades-long cultural footprint of Kala Jagran across Bihar and India.
+              </p>
+            </div>
+            <div class="col-lg-7">
+              <div id="demo" class="carousel slide shadow-lg rounded" data-ride="carousel">
+                <div class="carousel-inner bg-dark">
+                  <div class="carousel-item active"><img src="assets/img/1.jpeg" class="d-block w-100" alt="Moment 1" /></div>
+                  <div class="carousel-item"><img src="assets/img/2.jpeg" class="d-block w-100" alt="Moment 2" /></div>
+                  <div class="carousel-item"><img src="assets/img/3.jpeg" class="d-block w-100" alt="Moment 3" /></div>
+                  <div class="carousel-item"><img src="assets/img/4.jpeg" class="d-block w-100" alt="Moment 4" /></div>
+                  <div class="carousel-item"><img src="assets/img/5.jpeg" class="d-block w-100" alt="Moment 5" /></div>
+                </div>
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="my-5" />
+
+      <!-- Video Archive Section -->
+      <section id="productions" class="mb-5">
         <div class="row">
-          <!--Grid column-->
-          <div class="col-lg-5 col-md-12">
-            <!-- Form contact -->
-            <form class="p-5 grey-text" method="POST" action="POST" data-netlify="true">
-              <div class="md-form form-sm">
-                <i class="fa fa-user prefix"></i>
-                <label for="form3">Your name</label>
-                <input type="text" id="form3" class="form-control form-control-sm" name="name" />
-              </div>
-              <div class="md-form form-sm">
-                <i class="fa fa-envelope prefix"></i>
-                <label for="form2">Your email</label>
-                <input type="text" id="form2" class="form-control form-control-sm" name="email" />
-              </div>
-              <div class="md-form form-sm">
-                <i class="fa fa-tag prefix"></i>
-                <label for="form34">Subject</label>
-                <input type="text" id="form32" class="form-control form-control-sm" name="subject" />
-              </div>
-              <div class="md-form form-sm">
-                <i class="fa fa-pencil prefix"></i>
-                <label for="form8">Your message</label>
-                <textarea type="text" id="form8" class="md-textarea form-control form-control-sm" rows="4"
-                  name="message"></textarea>
-              </div>
-              <div class="text-center mt-4">
-                <button class="btn btn-primary">
-                  Send <i class="fa fa-paper-plane-o ml-1"></i>
+          <div class="col-12 mb-4">
+            <h3 class="neutral-accent font-weight-bold mb-4 text-center text-md-left" style="letter-spacing:1px;">FEATURED NATAK PRODUCTIONS</h3>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6KeohMvG4do" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/n1Tzwj4Lfn8" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-2">
+          <a class="btn btn-neutral px-4 btn-sm" href="https://www.youtube.com/channel/UC56fLZdZmb84-8cKLxCy9Fg" target="_blank">
+            <i class="fab fa-youtube mr-2"></i> Visit Digital Video Archive
+          </a>
+        </div>
+      </section>
+
+      <hr class="my-5" />
+
+      <!-- Contact & Info Section -->
+      <section id="contact_us" class="py-4">
+        <div class="row">
+          <div class="col-12 mb-4">
+            <h3 class="neutral-accent font-weight-bold mb-4 text-center text-md-left" style="letter-spacing:1px;">JOIN / CONTACT US</h3>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Form -->
+          <div class="col-lg-5 col-md-12 mb-4">
+            <div class="card archive-card p-4">
+              <form method="POST" action="POST" data-netlify="true">
+                <div class="form-group mb-3">
+                  <label for="form_name"><i class="fa fa-user neutral-accent mr-2"></i>Your name</label>
+                  <input type="text" id="form_name" class="form-control form-dark-control" name="name" placeholder="John Doe" required />
+                </div>
+                <div class="form-group mb-3">
+                  <label for="form_email"><i class="fa fa-envelope neutral-accent mr-2"></i>Your email</label>
+                  <input type="email" id="form_email" class="form-control form-dark-control" name="email" placeholder="example@mail.com" required />
+                </div>
+                <div class="form-group mb-3">
+                  <label for="form_subject"><i class="fa fa-tag neutral-accent mr-2"></i>Subject</label>
+                  <input type="text" id="form_subject" class="form-control form-dark-control" name="subject" placeholder="Inquiry" />
+                </div>
+                <div class="form-group mb-4">
+                  <label for="form_message"><i class="fa fa-pencil-alt neutral-accent mr-2"></i>Your message</label>
+                  <textarea id="form_message" class="form-control form-dark-control" rows="4" name="message" placeholder="Type your message here..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-neutral btn-block text-uppercase py-2">
+                  Send Message <i class="fa fa-paper-plane ml-1"></i>
                 </button>
-              </div>
-            </form>
-            <!-- Form contact -->
+              </form>
+            </div>
           </div>
-          <!--Grid column-->
 
-          <!--Grid column-->
+          <!-- Contact Meta & Map -->
           <div class="col-lg-7 col-md-12">
-            <!--Grid row-->
-            <div class="row text-center">
-              <!--Grid column-->
-              <div class="col-lg-4 col-md-12 mb-3">
-                <p>
-                  <i class="fa fa-map fa-1x mr-2 grey-text"></i>Opp. NIFT
-                  Campus Patna 800001, Bihar, India
-                </p>
+            <div class="row text-center mb-4">
+              <div class="col-md-4 mb-3">
+                <div class="p-2">
+                  <i class="fa fa-map-marked-alt fa-xl neutral-accent mb-2"></i>
+                  <p class="small text-muted">Opp. NIFT Campus, Patna 800001, Bihar, India</p>
+                </div>
               </div>
-              <!--Grid column-->
-
-              <!--Grid column-->
-              <div class="col-lg-4 col-md-6 mb-3">
-                <p>
-                  <i class="fa fa-building fa-1x mr-2 grey-text"></i>Mon -
-                  Fri, 8:00AM-8:00PM
-                </p>
+              <div class="col-md-4 mb-3">
+                <div class="p-2">
+                  <i class="fa fa-clock fa-xl neutral-accent mb-2"></i>
+                  <p class="small text-muted">Mon - Fri<br>8:00 AM - 8:00 PM</p>
+                </div>
               </div>
-              <!--Grid column-->
-
-              <!--Grid column-->
-              <div class="col-lg-4 col-md-6 mb-3">
-                <p>
-                  <i class="fa fa-phone fa-1x mr-2 grey-text"></i>+91
-                  9934035237
-                </p>
+              <div class="col-md-4 mb-3">
+                <div class="p-2">
+                  <i class="fa fa-phone-alt fa-xl neutral-accent mb-2"></i>
+                  <p class="small text-muted">+91 9934035237</p>
+                </div>
               </div>
-              <!--Grid column-->
             </div>
-            <!--Grid row-->
 
-            <!--Google map-->
-            <div class="embed-responsive embed-responsive-16by9 mb-5">
-              <!--Embedding the location using google maps share-->
-              <iframe class="embed-responsive-item"
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item map-frame"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3598.3155632633116!2d85.13505921485391!3d25.594428283712976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed59315c718ce7%3A0xa206377aa18078e4!2sKALA%20JAGRAN!5e0!3m2!1sen!2sin!4v1621082083451!5m2!1sen!2sin"
-                width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+                allowfullscreen="" loading="lazy"></iframe>
             </div>
           </div>
-          <!--Grid column-->
         </div>
-        <!--Grid row-->
       </section>
     </div>
   </main>
 
-  <!--Footer start-->
-  <footer>
-    <div class="bg-primary">
-      <div class="container container-fluid">
-        <div class="row py-4 d-flex align-items-center">
-          <div class="col-md-6 col-lg-5 text-center">
-            <h5 class="text-white">Get connected with us at</h5>
-          </div>
-          <div class="col-md-6 col-lg-7 text-center">
-            <!--facebook-->
-            <a class="fb-ic" href="https://www.facebook.com/profile.php?id=61573763551658" target="_blank">
-              <i class="fab fa-facebook fa-2x text-white mr-4"></i>
-            </a>
-            <!--instagram-->
-            <a class="ig-ic" href="https://www.instagram.com/kala_jagran" target="_blank">
-              <i class="fab fa-instagram fa-2x text-white mr-4"></i>
-            </a>
-            <!--youtube-->
-            <a class="yt-ic" href="https://www.youtube.com/channel/UC56fLZdZmb84-8cKLxCy9Fg" target="_blank">
-              <i class="fab fa-youtube fa-2x text-white mr-4"></i>
-            </a>
-          </div>
+  <!-- Footer -->
+  <footer class="text-white py-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-left mb-2 mb-md-0">
+          <span class="text-muted small">&copy; 2026 Kala Jagran Organization. All Rights Reserved.</span>
         </div>
-      </div>
-    </div>
-    <div class="container mt-5 mb-4 text-center text-white">
-      <div class="row mt-3">
-        <div class="col-md-4 col-lg-4 col-xl mb-4">
-          <h6 class="text-uppercase text-white">
-            <strong>KalaJagran</strong>
-          </h6>
-          <hr style="background-color: #050737" />
-          <p>Academy of Acting, Yoga, Dance, Arts & Craft</p>
-        </div>
-        <div class="col-md-4 col-lg-4 col-xl mb-4">
-          <h6 class="text-uppercase text-white">
-            <strong>Activities</strong>
-          </h6>
-          <hr style="background-color: #050737" />
-          <p>
-            Drama, Thearter & Yoga Workshop, Street Play, Tele Films,
-            Documentary, Radio & T.V Serials / Jingles
-          </p>
-        </div>
-        <div class="col-md-4 col-lg-3 col-xl-3">
-          <h6 class="text-uppercase font-weight-bold">
-            <strong>Contact</strong>
-          </h6>
-          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px" />
-          <p>
-            <i class="fas fa-home mr-3"></i>Opp. NIFT Campus, Patna 800001,
-            Bihar, India
-          </p>
-          <p><i class="fas fa-envelope mr-3"></i> kalajagran@gmail.com</p>
-          <p><i class="fas fa-phone mr-3"></i> + 91 9934035237</p>
+        <div class="col-md-6 text-center text-md-right">
+          <a class="text-muted mx-2" href="https://www.facebook.com/profile.php?id=61573763551658" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
+          <a class="text-muted mx-2" href="https://www.instagram.com/kala_jagran" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+          <a class="text-muted mx-2" href="https://www.youtube.com/channel/UC56fLZdZmb84-8cKLxCy9Fg" target="_blank"><i class="fab fa-youtube fa-lg"></i></a>
         </div>
       </div>
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
