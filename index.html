@@ -318,82 +318,92 @@
   </div>
 </section>
 
-<!-- Single Featured Upcoming Play Section (Placeholder Template) -->
-<section id="upcoming_plays" class="mb-5 py-2">
+<!-- Upcoming Play Section -->
+<section id="upcoming_play" class="mb-5 py-2">
   <div class="row">
     <div class="col-12 text-center text-md-left mb-4">
       <h3 class="neutral-accent font-weight-bold" style="letter-spacing:1px;">
-        <i class="fas fa-calendar-alt mr-2"></i>आगामी नाटक व प्रस्तुति (UPCOMING PLAY & EVENT)
+        <i class="fas fa-calendar-alt mr-2"></i>आगामी नाट्य प्रस्तुति (UPCOMING PERFORMANCE)
       </h3>
-      <p class="text-muted small">कला जागरण की आगामी प्रमुख नाट्य प्रस्तुति की समय-सारणी, स्थान एवं विवरण।</p>
+      <p class="text-muted small">कला जागरण द्वारा आयोजित आगामी सांस्कृतिक आयोजन एवं नाट्य संध्या।</p>
     </div>
   </div>
 
-  <!-- Dynamic Container: Replace content inside when event info is available -->
-  <div class="card upcoming-card p-4 p-md-4 border shadow-sm">
+  <div class="card upcoming-card p-4 border-0 shadow-sm">
     <div class="row align-items-center">
       
-      <!-- Poster Placeholder / Image Column -->
+      <!-- Poster Image Column (Fixed Fit - Entire Image Visible) -->
       <div class="col-lg-5 col-md-12 mb-4 mb-lg-0">
-        <div class="position-relative bg-light rounded d-flex align-items-center justify-content-center text-center p-4 border" style="min-height: 280px; max-height: 380px;">
-          <!-- Default Image / Poster Placeholder -->
-          <div>
-            <i class="fas fa-theater-masks fa-4x text-muted mb-3 opacity-50"></i>
-            <p class="text-muted small font-weight-bold mb-0">पोस्ट शीघ्र जारी किया जाएगा</p>
-            <span class="badge badge-warning position-absolute" style="top: 12px; left: 12px; padding: 8px 12px; font-size: 0.85rem;">
-              आगामी मंचन
-            </span>
-          </div>
+        <div class="position-relative overflow-hidden rounded shadow-sm bg-light d-flex align-items-center justify-content-center p-2" style="min-height: 420px; max-height: 520px;">
+          <span class="badge badge-warning position-absolute top-0 start-0 m-2 px-3 py-2 text-dark font-weight-bold" style="z-index: 10; top: 12px; left: 12px;">
+            <i class="fas fa-star mr-1"></i> आगामी आयोजन (Upcoming)
+          </span>
+          <img src="assets/img/WhatsApp Image 2026-09-12 at 7.00.53 PM.jpeg" 
+               class="img-fluid rounded w-100 h-100" 
+               alt="सुरमा नाटक पोस्टर" 
+               style="object-fit: contain; max-height: 500px;">
         </div>
       </div>
 
-      <!-- Play Details Placeholder Column -->
+      <!-- Play Details Column -->
       <div class="col-lg-7 col-md-12">
         <div class="d-flex align-items-center mb-3">
-          <div class="upcoming-date-badge mr-3 bg-secondary text-white text-center rounded p-2" style="min-width: 60px;">
-            <div class="day font-weight-bold h4 mb-0">--</div>
-            <div class="month small text-uppercase">माह</div>
+          <div class="upcoming-date-badge text-center bg-warning text-dark p-2 rounded mr-3 shadow-sm" style="min-width: 70px;">
+            <h3 class="font-weight-bold mb-0">25</h3>
+            <small class="text-uppercase font-weight-bold">सितम्बर</small>
           </div>
           <div>
-            <h4 class="font-weight-bold text-dark mb-1">नवीनतम नाट्य मंचन (शीघ्र घोषित)</h4>
-            <p class="small text-muted mb-0">
-              <i class="fas fa-user-edit mr-1"></i> <strong>लेखक एवं निर्देशक:</strong> घोषणा जल्द होगी
+            <h3 class="font-weight-bold text-dark mb-1">सुरमा <span class="h5 text-muted">(Surma)</span></h3>
+            <p class="text-muted small mb-0">
+              <i class="fas fa-ribbon text-danger mr-1"></i> <strong>रंग-स्मरांजलि:</strong> वरिष्ठ रंगकर्मी स्व. गणेश सिन्हा की स्मृति में समर्पित
             </p>
           </div>
         </div>
 
-        <p class="about-text text-muted mb-3" style="font-size: 0.98rem;">
-          कला जागरण द्वारा शीघ्र ही एक नए एवं सामाजिक संदेश से भरपूर नाटक का मंचन किया जाएगा। तिथि, स्थान एवं कलाकारों की सूची जल्द ही यहाँ अपडेट की जाएगी।
+        <p class="text-secondary mb-3" style="font-size: 0.95rem;">
+          सआदत हसन मंटो के प्रसिद्ध उर्दू अफसाने पर आधारित नाट्य प्रस्तुति। इसके साथ ही डॉ. किशोर सिन्हा द्वारा निर्मित 15 मिनट की वृत्तचित्र (Documentary) <strong>'अनहद स्वर : गणेश सिन्हा'</strong> का भी प्रदर्शन किया जाएगा।
         </p>
 
-        <!-- Meta Details Box Placeholder -->
-        <div class="bg-light p-3 rounded mb-3">
-          <div class="row">
-            <div class="col-sm-6 meta-info-item mb-2 mb-sm-0">
-              <i class="fas fa-clock text-muted"></i> <strong>समय:</strong> शीघ्र उपलब्ध होगा
+        <!-- Key Meta Details Grid -->
+        <div class="p-3 bg-light rounded mb-3">
+          <div class="row text-muted small">
+            <div class="col-sm-6 mb-2">
+              <i class="fas fa-book-open text-primary mr-2"></i><strong>मूल रचना:</strong> सआदत हसन मंटो
             </div>
-            <div class="col-sm-6 meta-info-item mb-2 mb-sm-0">
-              <i class="fas fa-map-marker-alt text-muted"></i> <strong>स्थान:</strong> पटना (स्थान तय होना बाकी)
+            <div class="col-sm-6 mb-2">
+              <i class="fas fa-pen-nib text-info mr-2"></i><strong>नाट्य रूपान्तरण:</strong> स्व. गणेश सिन्हा
             </div>
-            <div class="col-sm-6 meta-info-item mt-sm-2">
-              <i class="fas fa-ticket-alt text-muted"></i> <strong>प्रवेश:</strong> नि:शुल्क / पास द्वारा
+            <div class="col-sm-6 mb-2">
+              <i class="fas fa-user-ninja text-danger mr-2"></i><strong>परिकल्पना एवं निर्देशन:</strong> सुमन कुमार
             </div>
-            <div class="col-sm-6 meta-info-item mt-sm-2">
-              <i class="fas fa-theater-masks text-muted"></i> <strong>आयोजक:</strong> कला जागरण, पटना
+            <div class="col-sm-6 mb-2">
+              <i class="fas fa-film text-secondary mr-2"></i><strong>वृत्तचित्र:</strong> डॉ. किशोर सिन्हा (15 मिनट)
+            </div>
+            <div class="col-sm-6 mb-2">
+              <i class="far fa-calendar-alt text-success mr-2"></i><strong>तिथि:</strong> 25 सितम्बर 2026
+            </div>
+            <div class="col-sm-6 mb-2">
+              <i class="far fa-clock text-warning mr-2"></i><strong>समय:</strong> संध्या 06:45 बजे
+            </div>
+            <div class="col-12 mt-1">
+              <i class="fas fa-map-marker-alt text-danger mr-2"></i><strong>स्थान:</strong> प्रेमचन्द रंगशाला, राजेन्द्र नगर, पटना
             </div>
           </div>
         </div>
 
-        <!-- Action Button -->
-        <div class="d-flex justify-content-start align-items-center pt-2">
-          <a href="#contact_us" class="btn btn-neutral px-4 disabled" style="pointer-events: none; opacity: 0.65;">
-            <i class="fas fa-ticket-alt mr-2"></i> विवरण जल्द आ रहा है
+        <!-- Organizer Details -->
+        <div class="d-flex align-items-center justify-content-between flex-wrap pt-2">
+          <span class="small text-muted"><i class="fas fa-university mr-1"></i> <strong>आयोजक:</strong> कला जागरण (Kala Jagran)</span>
+          <a href="tel:9934035237" class="btn btn-outline-danger btn-sm mt-2 mt-sm-0">
+            <i class="fas fa-phone-alt mr-1"></i> संपर्क: 9934035237
           </a>
         </div>
-      </div>
 
+      </div>
     </div>
   </div>
+</section>
+
 
   <!-- Registration Banner -->
   <div class="card bg-light border p-3 rounded text-center mt-3">
